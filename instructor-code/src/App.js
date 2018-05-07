@@ -8,19 +8,17 @@ import FamilyChanger from './components/FamilyChanger';
 import TextContainer from './components/TextContainer';
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super()
     this.state = {
-      fontColor: 'pink',
-      fontSize: 12,
-      fontFamily: 'arial',
-      allowEdit: true
+      fontColor: 'violet',
+      fontSize: 20,
+      fontFamily: 'monospace',
+      allowEdit: true,
     }
   }
 
-  updateColor(val){
-    this.setState ({updateColor: val})
-  }
+  // updateColor
 
   // updateSize
 
@@ -38,10 +36,10 @@ class App extends Component {
           { /* Render FamilyChanger */ }
         </div>
         <div className="textArea">
-          <TextContainer 
-            fontColor = {this.state.fontColor}
-            fontSize = {this.state.fontSize}
-            fontFamily = {this.state.fontFamily}
+          <TextContainer
+            fontColor={this.state.fontColor}
+            fontSize={this.state.fontSize}
+            fontFamily={this.state.fontFamily}
           />
         </div>
       </div>

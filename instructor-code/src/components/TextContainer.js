@@ -19,11 +19,10 @@ export default class TextContainer extends Component {
     return (
       <div className="textContainer">
         <textarea 
-          style={{ 
-            color : this.props.fontColor,
-            fontSize : this.props.fontSize,
-            fontFamily : this.props.fontFamily,
-
+          style={{
+            color: this.props.fontColor,
+            fontSize: this.props.fontSize,
+            fontFamily: this.props.fontFamily,
           }}
           onChange={this.updateText}
           value={this.state.text} 

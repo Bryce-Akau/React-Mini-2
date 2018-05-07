@@ -4,8 +4,8 @@ export default function SizeChanger() {
   return (
     <select className="dropDownContainer">
       <option value="12"> 12 </option>
-      <option value="13"> 13 </option>
-      <option value="14"> 14 </option>
+      <option value="24"> 24 </option>
+      <option value="32"> 32 </option>
     </select>
   )
 }
